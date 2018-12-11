@@ -16,3 +16,7 @@ clean:
 	rm -rf *o hello 
 doc:
 	doxygen Doxyfile
+check:
+	cppcheck /home/jiaixing/taskb
+	valgrind g++ main.cc count.cc
+
